@@ -20,10 +20,10 @@ export function _onCreate() {
     app.use(plugin);
   });
   
-  app.model({ namespace: 'global', ...(require('/Users/yunji/Documents/antdesign-demo/src/models/global.ts').default) });
-app.model({ namespace: 'login', ...(require('/Users/yunji/Documents/antdesign-demo/src/models/login.ts').default) });
-app.model({ namespace: 'setting', ...(require('/Users/yunji/Documents/antdesign-demo/src/models/setting.ts').default) });
-app.model({ namespace: 'user', ...(require('/Users/yunji/Documents/antdesign-demo/src/models/user.ts').default) });
+  app.model({ namespace: 'global', ...(require('/Users/yunji/Documents/git/ant-design-pro-v4/src/models/global.ts').default) });
+app.model({ namespace: 'login', ...(require('/Users/yunji/Documents/git/ant-design-pro-v4/src/models/login.ts').default) });
+app.model({ namespace: 'setting', ...(require('/Users/yunji/Documents/git/ant-design-pro-v4/src/models/setting.ts').default) });
+app.model({ namespace: 'user', ...(require('/Users/yunji/Documents/git/ant-design-pro-v4/src/models/user.ts').default) });
   return app;
 }
 

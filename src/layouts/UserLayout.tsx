@@ -46,7 +46,7 @@ const UserLayout: React.SFC<UserLayoutProps> = props => {
         ...props,
       })}
     >
-      <canvas className="canvas"></canvas>
+      
       <div className={styles.container}>
         <div className={styles.lang}>
           <SelectLang />

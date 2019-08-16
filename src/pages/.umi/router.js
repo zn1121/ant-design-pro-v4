@@ -3,7 +3,7 @@ import { Router as DefaultRouter, Route, Switch } from 'react-router-dom';
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/lib/renderRoutes';
 import history from '@tmp/history';
-import RendererWrapper0 from '/Users/yunji/Documents/antdesign-demo/src/pages/.umi/LocaleWrapper.jsx';
+import RendererWrapper0 from '/Users/yunji/Documents/git/ant-design-pro-v4/src/pages/.umi/LocaleWrapper.jsx';
 import _dvaDynamic from 'dva/dynamic';
 
 const Router = require('dva/router').routerRedux.ConnectedRouter;
@@ -15,7 +15,7 @@ const routes = [
       ? _dvaDynamic({
           component: () =>
             import(/* webpackChunkName: "layouts__UserLayout" */ '../../layouts/UserLayout'),
-          LoadingComponent: require('/Users/yunji/Documents/antdesign-demo/src/components/PageLoading/index')
+          LoadingComponent: require('/Users/yunji/Documents/git/ant-design-pro-v4/src/components/PageLoading/index')
             .default,
         })
       : require('../../layouts/UserLayout').default,
@@ -27,7 +27,7 @@ const routes = [
           ? _dvaDynamic({
               app: require('@tmp/dva').getApp(),
               models: () => [
-                import(/* webpackChunkName: 'p__user__login__model.ts' */ '/Users/yunji/Documents/antdesign-demo/src/pages/user/login/model.ts').then(
+                import(/* webpackChunkName: 'p__user__login__model.ts' */ '/Users/yunji/Documents/git/ant-design-pro-v4/src/pages/user/login/model.ts').then(
                   m => {
                     return { namespace: 'model', ...m.default };
                   },
@@ -35,7 +35,7 @@ const routes = [
               ],
               component: () =>
                 import(/* webpackChunkName: "p__user__login" */ '../user/login'),
-              LoadingComponent: require('/Users/yunji/Documents/antdesign-demo/src/components/PageLoading/index')
+              LoadingComponent: require('/Users/yunji/Documents/git/ant-design-pro-v4/src/components/PageLoading/index')
                 .default,
             })
           : require('../user/login').default,
@@ -44,7 +44,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('/Users/yunji/Documents/antdesign-demo/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('/Users/yunji/Documents/git/ant-design-pro-v4/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -57,7 +57,7 @@ const routes = [
       ? _dvaDynamic({
           component: () =>
             import(/* webpackChunkName: "layouts__BasicLayout" */ '../../layouts/BasicLayout'),
-          LoadingComponent: require('/Users/yunji/Documents/antdesign-demo/src/components/PageLoading/index')
+          LoadingComponent: require('/Users/yunji/Documents/git/ant-design-pro-v4/src/components/PageLoading/index')
             .default,
         })
       : require('../../layouts/BasicLayout').default,
@@ -71,7 +71,7 @@ const routes = [
           ? _dvaDynamic({
               app: require('@tmp/dva').getApp(),
               models: () => [
-                import(/* webpackChunkName: 'p__list__card-list__model.ts' */ '/Users/yunji/Documents/antdesign-demo/src/pages/list/card-list/model.ts').then(
+                import(/* webpackChunkName: 'p__list__card-list__model.ts' */ '/Users/yunji/Documents/git/ant-design-pro-v4/src/pages/list/card-list/model.ts').then(
                   m => {
                     return { namespace: 'model', ...m.default };
                   },
@@ -79,7 +79,7 @@ const routes = [
               ],
               component: () =>
                 import(/* webpackChunkName: "p__list__card-list" */ '../list/card-list'),
-              LoadingComponent: require('/Users/yunji/Documents/antdesign-demo/src/components/PageLoading/index')
+              LoadingComponent: require('/Users/yunji/Documents/git/ant-design-pro-v4/src/components/PageLoading/index')
                 .default,
             })
           : require('../list/card-list').default,
@@ -90,7 +90,7 @@ const routes = [
           ? _dvaDynamic({
               component: () =>
                 import(/* webpackChunkName: "p__404" */ '../404'),
-              LoadingComponent: require('/Users/yunji/Documents/antdesign-demo/src/components/PageLoading/index')
+              LoadingComponent: require('/Users/yunji/Documents/git/ant-design-pro-v4/src/components/PageLoading/index')
                 .default,
             })
           : require('../404').default,
@@ -99,7 +99,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('/Users/yunji/Documents/antdesign-demo/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('/Users/yunji/Documents/git/ant-design-pro-v4/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -110,7 +110,7 @@ const routes = [
     component: __IS_BROWSER
       ? _dvaDynamic({
           component: () => import(/* webpackChunkName: "p__404" */ '../404'),
-          LoadingComponent: require('/Users/yunji/Documents/antdesign-demo/src/components/PageLoading/index')
+          LoadingComponent: require('/Users/yunji/Documents/git/ant-design-pro-v4/src/components/PageLoading/index')
             .default,
         })
       : require('../404').default,
@@ -119,7 +119,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('/Users/yunji/Documents/antdesign-demo/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+        require('/Users/yunji/Documents/git/ant-design-pro-v4/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: true },
       ),
